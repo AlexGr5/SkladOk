@@ -1,0 +1,31 @@
+version: "3.8"                          # Указываем версию Docker Compose
+
+services:
+  db:                                   # Определение сервиса базы данных
+    image: postgres:15                  # Используем официальный образ PostgreSQL версии 15
+    container_name: postgres_skladok    # Имя контейнера в системе Docker
+    restart: always                     # Контейнер будет автоматически перезапускаться при сбое
+    environment:                        # Определяем переменные окружения для БД
+      POSTGRES_DB: db_skladok           # Имя создаваемой базы данных
+      POSTGRES_USER: postgres           # Имя пользователя для подключения к БД
+      POSTGRES_PASSWORD: 1              # Пароль пользователя
+    ports:
+      - "5433:5432"                     # Пробрасываем порт: 5433 на хосте → 5432 в контейнере
+    volumes:                            # (posgresql установлен и на хосте, поэтому 5432 занят)
+      - postgres_data:/var/lib/postgresql/data  # Сохраняем данные БД в томе, чтобы не потерять их при перезапуске контейнера
+
+  app:                                  # Определение сервиса приложения
+    build: ./                           # Собираем образ из текущего каталога, где находится Dockerfile
+    container_name: tekstile_app        # Имя контейнера приложения
+    restart: always                     # Контейнер перезапустится при сбое
+    depends_on:
+      - db                              # Указываем, что сначала должен запуститься контейнер БД
+    environment:                        # Переменные окружения для Spring Boot
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/db_skladok  # URL для подключения к базе данных (db — это имя сервиса БД)
+      SPRING_DATASOURCE_USERNAME: postgres  # Имя пользователя для подключения к БД
+      SPRING_DATASOURCE_PASSWORD: 1     # Пароль для подключения к БД
+    ports:
+      - "8080:8080"                     # Пробрасываем порт: 8080 на хосте → 8080 в контейнере
+
+volumes:
+  postgres_data:                        # Определение тома для хранения данных БД (чтобы сохранить данные)

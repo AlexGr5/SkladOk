@@ -1,0 +1,12 @@
+ru/alexey/zadanie/TekstileApp/utils/SkladOkErrorResponse.class
+ru/alexey/zadanie/TekstileApp/utils/SkladOkNotFoundException.class
+ru/alexey/zadanie/TekstileApp/dao/SkladOkDAO.class
+ru/alexey/zadanie/TekstileApp/TekstileAppApplication.class
+ru/alexey/zadanie/TekstileApp/utils/QueryNotEnoughGoodsInStockException.class
+ru/alexey/zadanie/TekstileApp/dto/SkladOkDTO.class
+ru/alexey/zadanie/TekstileApp/controllers/TekstileController.class
+ru/alexey/zadanie/TekstileApp/utils/QueryNotCorrectedException.class
+ru/alexey/zadanie/TekstileApp/forDB/SkladOkRepo.class
+ru/alexey/zadanie/TekstileApp/utils/SkladOkNotCreatedException.class
+ru/alexey/zadanie/TekstileApp/dto/QueryDTO.class
+ru/alexey/zadanie/TekstileApp/models/SkladOk.class

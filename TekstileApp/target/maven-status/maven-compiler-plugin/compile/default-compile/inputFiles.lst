@@ -1,0 +1,12 @@
+/Users/krutojcelovecek/altstu/sber/TekstileApp/src/main/java/ru/alexey/zadanie/TekstileApp/TekstileAppApplication.java
+/Users/krutojcelovecek/altstu/sber/TekstileApp/src/main/java/ru/alexey/zadanie/TekstileApp/controllers/TekstileController.java
+/Users/krutojcelovecek/altstu/sber/TekstileApp/src/main/java/ru/alexey/zadanie/TekstileApp/dao/SkladOkDAO.java
+/Users/krutojcelovecek/altstu/sber/TekstileApp/src/main/java/ru/alexey/zadanie/TekstileApp/dto/QueryDTO.java
+/Users/krutojcelovecek/altstu/sber/TekstileApp/src/main/java/ru/alexey/zadanie/TekstileApp/dto/SkladOkDTO.java
+/Users/krutojcelovecek/altstu/sber/TekstileApp/src/main/java/ru/alexey/zadanie/TekstileApp/forDB/SkladOkRepo.java
+/Users/krutojcelovecek/altstu/sber/TekstileApp/src/main/java/ru/alexey/zadanie/TekstileApp/models/SkladOk.java
+/Users/krutojcelovecek/altstu/sber/TekstileApp/src/main/java/ru/alexey/zadanie/TekstileApp/utils/QueryNotCorrectedException.java
+/Users/krutojcelovecek/altstu/sber/TekstileApp/src/main/java/ru/alexey/zadanie/TekstileApp/utils/QueryNotEnoughGoodsInStockException.java
+/Users/krutojcelovecek/altstu/sber/TekstileApp/src/main/java/ru/alexey/zadanie/TekstileApp/utils/SkladOkErrorResponse.java
+/Users/krutojcelovecek/altstu/sber/TekstileApp/src/main/java/ru/alexey/zadanie/TekstileApp/utils/SkladOkNotCreatedException.java
+/Users/krutojcelovecek/altstu/sber/TekstileApp/src/main/java/ru/alexey/zadanie/TekstileApp/utils/SkladOkNotFoundException.java
